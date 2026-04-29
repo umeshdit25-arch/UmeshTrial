@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Podcast Show</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        [span_5](start_span)/* Navigation Tags[span_5](end_span) */
+        nav {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav h1 { margin: 0 0 10px 0; }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        [span_6](start_span)[span_7](start_span)/* Header with Player[span_6](end_span)[span_7](end_span) */
+        header {
+            background: #34495e;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        [span_8](start_span)/* Main Content Structure[span_8](end_span) */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        [span_9](start_span)[span_10](start_span)/* Article & Content Tags[span_9](end_span)[span_10](end_span) */
+        article {
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+        article:last-child { border-bottom: none; }
+        
+        details {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        [span_11](start_span)[span_12](start_span)/* Form Tags[span_11](end_span)[span_12](end_span) */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+        }
+        input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover { background: #c0392b; }
+
+        [span_13](start_span)[span_14](start_span)/* Footer[span_13](end_span)[span_14](end_span) */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>My Podcast</h1>
+        <a href="#episodes">Episodes</a>
+        <a href="#subscribe">Subscribe</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        <h2>Welcome to My Podcast</h2>
+        <p>Listen to our latest episode:</p>
+        <audio controls>
+            <source src="latest-episode.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </header>
+
+    <main>
+        <section id="episodes">
+            <h2>Recent Episodes</h2>
+            
+            <article>
+                <h3>Episode 1: Introduction</h3>
+                <audio controls>
+                    <source src="episode1.mp3" type="audio/mpeg">
+                </audio>
+                <details>
+                    <summary>Show Notes</summary>
+                    [span_15](start_span)<p>In this debut episode, we introduce the goals of the show and what listeners can expect in the coming weeks.[span_15](end_span)</p>
+                </details>
+            </article>
+
+            <article>
+                <h3>Episode 2: Deep Dive</h3>
+                <audio controls>
+                    <source src="episode2.mp3" type="audio/mpeg">
+                </audio>
+                <details>
+                    <summary>Show Notes</summary>
+                    [span_16](start_span)<p>We explore advanced topics and interview industry experts in this technical deep dive.[span_16](end_span)</p>
+                </details>
+            </article>
+        </section>
+
+        <section id="subscribe">
+            <h2>Subscribe</h2>
+            <p>Follow us on your favorite platform:</p>
+            <a href="#">Spotify</a> | 
+            <a href="#">Apple Podcasts</a> | 
+            <a href="#">Google Podcasts</a>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email">
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; [span_17](start_span)[span_18](start_span)2026 My Podcast Show - Developed by Umesh Deshmukh[span_17](end_span)[span_18](end_span)</p>
+    </footer>
+
+</body>
+</html>
